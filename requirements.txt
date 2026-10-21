@@ -1,0 +1,9 @@
+# OmniVoice needs torch 2.8. The Docker image installs the CUDA 12.8 wheels.
+torch==2.8.0
+torchaudio==2.8.0
+omnivoice
+numpy
+soundfile
+fastapi
+uvicorn[standard]
+pydantic>=2

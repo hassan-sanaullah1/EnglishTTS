@@ -1,0 +1,9 @@
+# Model weights - 3.1 GB, download from Hugging Face (see README "First-time setup")
+models/omnivoice/
+
+# runtime logs
+logs/*.log
+logs/*.jsonl
+__pycache__/
+*.pyc
+.env

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "lullaby_female",
+    "label": "lullaby_female (swapped 2026-10-21)",
+    "gender": "female",
+    "source": "/home/ubuntu/Desktop/mari-tts-server/voices/lullaby_female/clip.wav",
+    "text": "اب یہ دیکھیں، یہ ساری images میں نے generate کروائی ہیں، اب ان میں سے جو مجھے پسند ہوگی ہم وہ download کریں گے",
+    "duration": 6.41,
+    "sha256": "c923467c3df2d43816dc9a15951685d46758ddf1ca8a15a4980e6cbdd383e524",
+    "checked_at": "2026-10-21T11:13:33",
+    "checks_passed": false,
+    "leak_words": []
+  },
+  {
+    "id": "uplift_male",
+    "label": "uplift_male (swapped 2026-10-21)",
+    "gender": "male",
+    "source": "/home/ubuntu/Desktop/mari-tts-server/voices/uplift_male/clip.wav",
+    "text": "ہم نے budget کا نیا estimate تیار کر لیا ہے۔",
+    "duration": 3.06,
+    "sha256": "bf413caaacb4ebbb0820ada5b2634166078f05727defc1e8aed0d43c64b7bbd3",
+    "checked_at": "2026-10-21T11:14:44",
+    "checks_passed": true,
+    "leak_words": []
+  }
+]

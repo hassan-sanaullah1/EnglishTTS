@@ -1,0 +1,32 @@
+# Mari kiosk English TTS.
+#
+#   docker compose up -d --build
+#   curl -s localhost:8080/health | python3 -m json.tool
+#
+# The weights, voices and settings are bind-mounted read-only, so they are not copied into the
+# image and can be changed without a rebuild - edit app/settings.env, then:
+#   docker compose restart mari-tts
+services:
+  mari-tts:
+    build: .
+    image: mari-tts-server:1.0
+    container_name: mari-tts-v2
+    restart: unless-stopped
+    ports:
+      - "${MARI_PORT:-8080}:8080"
+    volumes:
+      - ./models:/srv/models:ro      # 3.1 GB of OmniVoice weights
+      - ./voices:/srv/voices:ro      # the two reference clips + their pre-encoded prompts
+      - ./app/lexicon.json:/srv/app/lexicon.json:ro    # pronunciation lexicon - edit, restart
+      - ./app/settings.env:/srv/app/settings.env:ro    # all other TTS settings - edit, restart
+    environment:
+      # Secrets stay out of settings.env on principle; pass the real token via the shell or a
+      # .env this compose file reads, and it overrides settings.env's blank default.
+      MARI_TTS_TOKEN: "${MARI_TTS_TOKEN:-}"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

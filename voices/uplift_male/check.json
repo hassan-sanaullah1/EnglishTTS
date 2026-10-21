@@ -1,0 +1,20 @@
+{
+  "reference": {
+    "ok": true,
+    "transcript": "ہم نے budget کا نیا estimate تیار کر لیا ہے۔",
+    "problems": [],
+    "duration": 3.0563265306122447,
+    "peak": 0.3724365234375,
+    "tail_silence": 0.37,
+    "sr": 22050
+  },
+  "leak": {
+    "leaked": [],
+    "lead_extra": 0,
+    "ok": true,
+    "why": "",
+    "probe_text": "Our chairman is Lieutenant General Anwar Ali Hyder, who also serves as Chairman of the Fauji Group of Companies.",
+    "probe_transcript": "Our chairman is Lieutenant General Anwar Ali Haider, who also serves as chairman of the 4G group of companies."
+  },
+  "forced": false
+}

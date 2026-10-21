@@ -1,0 +1,23 @@
+{
+  "reference": {
+    "ok": false,
+    "transcript": "اب یہ دیکھیں، یہ ساری images میں نے generate کروائی ہیں، اب ان میں سے جو مجھے پسند ہوگی ہم وہ download کریں گے",
+    "problems": [
+      "transcript does not end in sentence-final punctuation (ends 'ے'): the clip may be cut mid-sentence",
+      "no trailing silence (0.000s): the clip is probably cut mid-word"
+    ],
+    "duration": 6.409977324263038,
+    "peak": 0.968597412109375,
+    "tail_silence": 0.0,
+    "sr": 22050
+  },
+  "leak": {
+    "leaked": [],
+    "lead_extra": 0,
+    "ok": true,
+    "why": "",
+    "probe_text": "Our chairman is Lieutenant General Anwar Ali Hyder, who also serves as Chairman of the Fauji Group of Companies.",
+    "probe_transcript": "Our chairman is Lieutenant General Anwar Ali Haider, who also serves as chairman of the 4G group of companies."
+  },
+  "forced": true
+}
